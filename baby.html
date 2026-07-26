@@ -1,0 +1,697 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="az" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Plaza Uşaq Bağçası | Müasir İnkişaf Mərkəzi</title>
+    
+    <!-- Google Fonts - Plus Jakarta Sans & Outfit for crisp, perfectly aligned Azerbaijani text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#F0FDF4',
+                            100: '#DCFCE7',
+                            500: '#10B981', // Emerald Primary
+                            600: '#059669',
+                            700: '#047857',
+                        },
+                        warm: {
+                            50: '#FFF7ED',
+                            100: '#FFEDD5',
+                            500: '#F97316', // Soft Warm Orange
+                            600: '#EA580C',
+                        },
+                        sky: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            500: '#0EA5E9', // Sky Blue
+                        },
+                        lavender: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            500: '#8B5CF6',
+                        },
+                        darkNavy: '#0F172A',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
+                        'card': '0 4px 20px 0px rgba(15, 23, 42, 0.04)',
+                        'glow': '0 0 25px rgba(16, 185, 129, 0.2)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #FAFAFA;
+            color: #0F172A;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Custom scrollbar for horizontal schedule section */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .calc-card-input:checked + .calc-card {
+            border-color: #10B981;
+            background-color: #F0FDF4;
+            box-shadow: 0 4px 20px 0px rgba(16, 185, 129, 0.15);
+        }
+
+        .calc-card-input:checked + .calc-card .check-badge {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky top-0 z-50 bg-[#FAFAFA]/90 backdrop-blur-md border-b border-slate-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-500 to-sky-500 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform duration-300">
+                        BP
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-heading font-extrabold text-xl tracking-tight text-darkNavy">Baby Plaza</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 hidden sm:inline-flex">
+                                Uşaq İnkişaf Mərkəzi
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium sm:hidden">Uşaq İnkişaf Mərkəzi</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                    <a href="#features" class="hover:text-brand-600 transition-colors">Üstünlüklər</a>
+                    <a href="#calculator" class="hover:text-brand-600 transition-colors">Hesablayıcı</a>
+                    <a href="#schedule" class="hover:text-brand-600 transition-colors">Gün Rejimi</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors">Əlaqə</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/994505375434?text=Salam!%20Baby%20Plaza%20uşaq%20bağçasında%20tur%20təyin%20etmək%20istəyirəm." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Tur Təyin Et</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+            <!-- Background Accent Shapes -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-brand-100/40 via-sky-100/30 to-warm-100/40 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <!-- Instagram Pill Badge -->
+                <a href="https://instagram.com/babyplaza_usaqbagcasi" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200/80 shadow-card hover:shadow-md transition-all duration-300 mb-8 group">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    <i data-lucide="instagram" class="w-4 h-4 text-pink-600"></i>
+                    <span class="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-brand-600">@babyplaza_usaqbagcasi</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform"></i>
+                </a>
+
+                <!-- Hero Headline -->
+                <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-darkNavy tracking-tight leading-[1.15] max-w-4xl mx-auto mb-6">
+                    Övladınız Üçün Təhlükəsiz və <span class="bg-gradient-to-r from-brand-600 via-sky-500 to-warm-500 bg-clip-text text-transparent">Şən Təhsil Mühiti</span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+                    4 aydan 6 yaşa qədər uşaqların fiziki, əqli və sosial inkişafı üçün müasir, sevgi dolu uşaq bağçası.
+                </p>
+
+                <!-- Hero Badges -->
+                <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10">
+                    <div class="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white border border-slate-100 shadow-card">
+                        <div class="w-8 h-8 rounded-xl bg-warm-50 text-warm-500 flex items-center justify-center font-bold text-sm">
+                            👶
+                        </div>
+                        <span class="font-semibold text-slate-700 text-sm">4 Ay - 6 Yaş</span>
+                    </div>
+
+                    <div class="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white border border-slate-100 shadow-card">
+                        <div class="w-8 h-8 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center">
+                            <i data-lucide="video" class="w-4 h-4"></i>
+                        </div>
+                        <span class="font-semibold text-slate-700 text-sm">24/7 Kamera Nəzarəti</span>
+                    </div>
+
+                    <div class="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white border border-slate-100 shadow-card">
+                        <div class="w-8 h-8 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center">
+                            <i data-lucide="utensils" class="w-4 h-4"></i>
+                        </div>
+                        <span class="font-semibold text-slate-700 text-sm">Balanslaşdırılmış Menyu</span>
+                    </div>
+                </div>
+
+                <!-- Hero Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#calculator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-base shadow-glow hover:shadow-lg transition-all duration-300">
+                        <i data-lucide="calculator" class="w-5 h-5"></i>
+                        <span>Hesablayıcıya Keç</span>
+                    </a>
+
+                    <a href="tel:+994505375434" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-darkNavy border border-slate-200 font-bold text-base shadow-card transition-all duration-300">
+                        <i data-lucide="phone-call" class="w-5 h-5 text-brand-500"></i>
+                        <span>Zəng Et: 050 537 54 34</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURES / WHY US SECTION -->
+        <section id="features" class="py-16 bg-white border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Niyə Baby Plaza?</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-darkNavy mt-3">Valideynlərin Bizi Seçmə Səbəbləri</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-3xl bg-[#FAFAFA] border border-slate-100 hover:border-brand-100 hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center mb-6">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-darkNavy mb-3">Yüksək Təhlükəsizlik</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Mərkəzimiz tam olaraq 24/7 təhlükəsizlik kameraları və peşəkar mühafizə sistemi ilə təchiz olunub. Valideynlər rahat şəkildə işlərinə davam edə bilərlər.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-3xl bg-[#FAFAFA] border border-slate-100 hover:border-sky-100 hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-6">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-darkNavy mb-3">Müasir Təlim Metodikası</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Montessori və interaktiv öyrənmə metodikaları ilə uşaqların intellektual, estetik və sosial bacarıqlarını erkən yaşdan inkişaf etdiririk.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-3xl bg-[#FAFAFA] border border-slate-100 hover:border-warm-100 hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-2xl bg-warm-100 text-warm-600 flex items-center justify-center mb-6">
+                            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-darkNavy mb-3">Fərdi Diqqət və Qayğı</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Kiçik qruplar sayəsində hər bir uşağa fərdi yanaşılır. Təcrübəli pedaqoqlar, psixoloq və logoped komandamız hər zaman yanınızdadır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE CALCULATOR SECTION -->
+        <section id="calculator" class="py-20 bg-[#FAFAFA]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-warm-600 bg-warm-50 px-3.5 py-1.5 rounded-full">İnteraktiv Xidmət</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-darkNavy mt-3">Təhsil və Qayğı Paketi Hesablayıcısı</h2>
+                    <p class="text-slate-600 mt-2 text-sm sm:text-base">Övladınızın yaşına və tələblərinizə uyğun proqramı seçin, paketinizi dərhal formalaşdırın.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Selection Controls (Left Side) -->
+                    <div class="lg:col-span-7 space-y-8">
+                        
+                        <!-- Step 1: Age Group -->
+                        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-card">
+                            <div class="flex items-center justify-between mb-5">
+                                <h3 class="font-heading text-lg font-bold text-darkNavy flex items-center gap-2">
+                                    <span class="w-7 h-7 rounded-full bg-brand-100 text-brand-700 text-xs flex items-center justify-center font-bold">1</span>
+                                    <span>Yaş Qrupunu Seçin</span>
+                                </h3>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                <!-- Option 1 -->
+                                <label class="relative cursor-pointer">
+                                    <input type="radio" name="ageGroup" value="baby" class="calc-card-input sr-only" checked onchange="updateCalculator()">
+                                    <div class="calc-card p-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all duration-200 h-full flex flex-col justify-between">
+                                        <div class="text-2xl mb-2">🍼</div>
+                                        <div>
+                                            <div class="font-bold text-darkNavy text-sm">4-12 Ay</div>
+                                            <div class="text-xs text-slate-500">Körpə Qrupu</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <!-- Option 2 -->
+                                <label class="relative cursor-pointer">
+                                    <input type="radio" name="ageGroup" value="toddler" class="calc-card-input sr-only" onchange="updateCalculator()">
+                                    <div class="calc-card p-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all duration-200 h-full flex flex-col justify-between">
+                                        <div class="text-2xl mb-2">🧸</div>
+                                        <div>
+                                            <div class="font-bold text-darkNavy text-sm">1-3 Yaş</div>
+                                            <div class="text-xs text-slate-500">Erkən İnkişaf</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <!-- Option 3 -->
+                                <label class="relative cursor-pointer">
+                                    <input type="radio" name="ageGroup" value="preschool" class="calc-card-input sr-only" onchange="updateCalculator()">
+                                    <div class="calc-card p-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all duration-200 h-full flex flex-col justify-between">
+                                        <div class="text-2xl mb-2">🎨</div>
+                                        <div>
+                                            <div class="font-bold text-darkNavy text-sm">3-6 Yaş</div>
+                                            <div class="text-xs text-slate-500">Məktəbəqədər</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Duration -->
+                        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-card">
+                            <div class="flex items-center justify-between mb-5">
+                                <h3 class="font-heading text-lg font-bold text-darkNavy flex items-center gap-2">
+                                    <span class="w-7 h-7 rounded-full bg-brand-100 text-brand-700 text-xs flex items-center justify-center font-bold">2</span>
+                                    <span>Iştirak Müddəti</span>
+                                </h3>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Half Day -->
+                                <label class="relative cursor-pointer">
+                                    <input type="radio" name="duration" value="half" class="calc-card-input sr-only" onchange="updateCalculator()">
+                                    <div class="calc-card p-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all duration-200 flex items-center gap-4">
+                                        <div class="text-3xl">⏰</div>
+                                        <div>
+                                            <div class="font-bold text-darkNavy text-base">Yarımgünlük</div>
+                                            <div class="text-xs text-slate-500 font-medium">08:00 - 13:00 (Səhər)</div>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <!-- Full Day -->
+                                <label class="relative cursor-pointer">
+                                    <input type="radio" name="duration" value="full" class="calc-card-input sr-only" checked onchange="updateCalculator()">
+                                    <div class="calc-card p-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all duration-200 flex items-center gap-4">
+                                        <div class="text-3xl">☀️</div>
+                                        <div>
+                                            <div class="font-bold text-darkNavy text-base">Tamgünlük</div>
+                                            <div class="text-xs text-slate-500 font-medium">08:00 - 19:00 (Tam Gün)</div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Extra Services -->
+                        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-card">
+                            <div class="flex items-center justify-between mb-5">
+                                <h3 class="font-heading text-lg font-bold text-darkNavy flex items-center gap-2">
+                                    <span class="w-7 h-7 rounded-full bg-brand-100 text-brand-700 text-xs flex items-center justify-center font-bold">3</span>
+                                    <span>Əlavə Xidmətlər və Məşğələlər</span>
+                                </h3>
+                            </div>
+
+                            <div class="space-y-3">
+                                <!-- Extra 1 -->
+                                <label class="flex items-center justify-between p-4 rounded-2xl border border-slate-200/80 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">🇬🇧</span>
+                                        <div>
+                                            <div class="font-semibold text-darkNavy text-sm">İngilis və Rus Dili Dərsləri</div>
+                                            <div class="text-xs text-slate-500">Erkən yaşda interaktiv dil öyrənməsi</div>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="ext-lang" value="languages" class="w-5 h-5 rounded text-brand-500 focus:ring-brand-500 border-slate-300" onchange="updateCalculator()">
+                                </label>
+
+                                <!-- Extra 2 -->
+                                <label class="flex items-center justify-between p-4 rounded-2xl border border-slate-200/80 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">💃</span>
+                                        <div>
+                                            <div class="font-semibold text-darkNavy text-sm">Gimnastika və Rəqs</div>
+                                            <div class="text-xs text-slate-500">Fiziki inkişaf və ritm duyğusu</div>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="ext-dance" value="dance" class="w-5 h-5 rounded text-brand-500 focus:ring-brand-500 border-slate-300" onchange="updateCalculator()">
+                                </label>
+
+                                <!-- Extra 3 -->
+                                <label class="flex items-center justify-between p-4 rounded-2xl border border-slate-200/80 hover:bg-slate-50 cursor-pointer transition-colors">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">🧠</span>
+                                        <div>
+                                            <div class="font-semibold text-darkNavy text-sm">Logoped və Psixoloq Nəzarəti</div>
+                                            <div class="text-xs text-slate-500">Nitq inkişafı və emosional dəstək</div>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" id="ext-speech" value="speech" class="w-5 h-5 rounded text-brand-500 focus:ring-brand-500 border-slate-300" onchange="updateCalculator()">
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Live Dynamic Summary Box (Right Side) -->
+                    <div class="lg:col-span-5 sticky top-28">
+                        <div class="bg-gradient-to-b from-darkNavy to-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                            <!-- Background glow inside card -->
+                            <div class="absolute -top-12 -right-12 w-40 h-40 bg-brand-500/20 rounded-full blur-2xl"></div>
+
+                            <div class="flex items-center justify-between border-b border-slate-700/60 pb-5 mb-6">
+                                <div>
+                                    <h3 class="font-heading text-xl font-bold">Xülasə & Paket</h3>
+                                    <p class="text-xs text-slate-400">Canlı seçilmiş parametrlər</p>
+                                </div>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/20 text-brand-400 border border-brand-500/30">
+                                    Fərdiləşdirilmiş
+                                </span>
+                            </div>
+
+                            <!-- Dynamic List -->
+                            <div class="space-y-4 mb-8 text-sm">
+                                <div class="flex justify-between items-center pb-3 border-b border-slate-800">
+                                    <span class="text-slate-400">Yaş Qrupu:</span>
+                                    <span id="summary-age" class="font-semibold text-slate-200">4-12 Ay (Körpə Qrupu)</span>
+                                </div>
+
+                                <div class="flex justify-between items-center pb-3 border-b border-slate-800">
+                                    <span class="text-slate-400">İştirak Rejimi:</span>
+                                    <span id="summary-duration" class="font-semibold text-slate-200">Tamgünlük (08:00 - 19:00)</span>
+                                </div>
+
+                                <div>
+                                    <span class="text-slate-400 block mb-2">Daxil olan xidmətlər:</span>
+                                    <ul class="space-y-2 pl-1" id="summary-included">
+                                        <li class="flex items-center gap-2 text-xs text-slate-300">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
+                                            <span>4 dəfə qidalanma (Balanslı Menyu)</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 text-xs text-slate-300">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
+                                            <span>24/7 Kamera Müşahidəsi</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 text-xs text-slate-300">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-400"></i>
+                                            <span>Pediatr və Tibbi nəzarət</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Dynamic Extras list -->
+                                <div id="summary-extras-wrapper" class="pt-2">
+                                    <span class="text-slate-400 block mb-2 text-xs">Seçilən əlavə dərslər:</span>
+                                    <div id="summary-extras-list" class="flex flex-wrap gap-1.5">
+                                        <span class="text-xs text-slate-500 italic">Əlavə dərslər seçilməyib</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Total Call to Action Button -->
+                            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm sm:text-base transition-all duration-300 shadow-glow">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                <span>Bu Paket İlə Müraciət Et</span>
+                            </a>
+                            <p class="text-center text-slate-400 text-xs mt-3">Müraciətiniz birbaşa WhatsApp vasitəsilə ünvanlanacaq.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DAILY ROUTINE (HORIZONTALLY SCROLLABLE CARDS) -->
+        <section id="schedule" class="py-20 bg-white border-t border-slate-200/60 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-sky-600 bg-sky-50 px-3.5 py-1.5 rounded-full">Gün Rejimi</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-darkNavy mt-3">Bağçada Bir Günümüz</h2>
+                        <p class="text-slate-600 mt-2 text-sm sm:text-base">Uşaqlarımızın gün ərzindəki maraqlı və intizamlı fəaliyyət planı.</p>
+                    </div>
+
+                    <div class="hidden sm:flex items-center gap-2 mt-4 md:mt-0">
+                        <button onclick="scrollSchedule(-300)" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition-colors">
+                            <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                        </button>
+                        <button onclick="scrollSchedule(300)" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 transition-colors">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cards Container -->
+                <div id="schedule-container" class="flex gap-6 overflow-x-auto hide-scrollbar pb-6 snap-x snap-mandatory">
+                    
+                    <!-- Card 1 -->
+                    <div class="snap-start flex-shrink-0 w-72 sm:w-80 p-6 rounded-3xl bg-[#FAFAFA] border border-slate-200/80 shadow-card hover:shadow-lg transition-all duration-300">
+                        <div class="text-xs font-bold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mb-4">08:00 - 09:00</div>
+                        <div class="text-3xl mb-3">🌅</div>
+                        <h3 class="font-heading text-lg font-bold text-darkNavy mb-2">Qəbul və Səhər Gimnastikası</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Uşaqların gülərhüz qarşılanması, tibbi yoxlanış və şən musiqi sədaları altında yüngül idman təmrinləri.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="snap-start flex-shrink-0 w-72 sm:w-80 p-6 rounded-3xl bg-[#FAFAFA] border border-slate-200/80 shadow-card hover:shadow-lg transition-all duration-300">
+                        <div class="text-xs font-bold text-warm-600 bg-warm-50 px-3 py-1 rounded-full w-max mb-4">09:00 - 09:30</div>
+                        <div class="text-3xl mb-3">🥣</div>
+                        <h3 class="font-heading text-lg font-bold text-darkNavy mb-2">Qidalı Səhər Yeməyi</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Pediatr nəzarəti ilə tərtib olunmuş, təbii və təzə ərzaqlardan hazırlanan vitaminli səhər yeməyi.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="snap-start flex-shrink-0 w-72 sm:w-80 p-6 rounded-3xl bg-[#FAFAFA] border border-slate-200/80 shadow-card hover:shadow-lg transition-all duration-300">
+                        <div class="text-xs font-bold text-sky-600 bg-sky-50 px-3 py-1 rounded-full w-max mb-4">09:30 - 11:30</div>
+                        <div class="text-3xl mb-3">🎨</div>
+                        <h3 class="font-heading text-lg font-bold text-darkNavy mb-2">İnteraktiv Təlim Və Dərslər</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Məntiq oyunları, xarici dil dərsləri (İngilis/Rus), rəsm, plastilin və nitq inkişafı məşğələləri.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="snap-start flex-shrink-0 w-72 sm:w-80 p-6 rounded-3xl bg-[#FAFAFA] border border-slate-200/80 shadow-card hover:shadow-lg transition-all duration-300">
+                        <div class="text-xs font-bold text-lavender-500 bg-lavender-50 px-3 py-1 rounded-full w-max mb-4">11:30 - 12:30</div>
+                        <div class="text-3xl mb-3">🛝</div>
+                        <h3 class="font-heading text-lg font-bold text-darkNavy mb-2">Açıq Havada Oyunlar</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Xüsusi yumşaq örtüklü həyətyanı sahədə təmiz havada gəzinti və sosial inkişaf oyunları.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="snap-start flex-shrink-0 w-72 sm:w-80 p-6 rounded-3xl bg-[#FAFAFA] border border-slate-200/80 shadow-card hover:shadow-lg transition-all duration-300">
+                        <div class="text-xs font-bold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mb-4">13:00 - 15:00</div>
+                        <div class="text-3xl mb-3">😴</div>
+                        <h3 class="font-heading text-lg font-bold text-darkNavy mb-2">Şirin Yuxu Və İstirahət</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Nahar yeməyindən sonra rahat, havalandırılmış otaqlarda uşaqların fiziki bərpası üçün sakit yuxu vaxtı.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER & LOCATION -->
+        <footer id="contact" class="bg-darkNavy text-white pt-16 pb-12 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                    
+                    <!-- Info Column -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white font-bold text-lg">
+                                BP
+                            </div>
+                            <span class="font-heading font-extrabold text-2xl tracking-tight">Baby Plaza</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                            4 aydan 6 yaşa qədər uşaqların intellektual, fiziki və mənəvi inkişafı üçün etibarlı ünvanınız.
+                        </p>
+                        
+                        <div class="pt-2 flex items-center gap-3">
+                            <a href="https://instagram.com/babyplaza_usaqbagcasi" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-500 flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://wa.me/994505375434" target="_blank" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-500 flex items-center justify-center text-slate-300 hover:text-white transition-all duration-300">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-4 space-y-4">
+                        <h4 class="font-heading text-lg font-bold text-white mb-4">Əlaqə Məlumatları</h4>
+                        
+                        <div class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="phone" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <a href="tel:+994505375434" class="hover:text-brand-400 transition-colors block">+994 50 537 54 34</a>
+                                <a href="tel:+994707999090" class="hover:text-brand-400 transition-colors block">+994 70 799 90 90</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                            <span>Bakı şəhəri, Müasir və təhlükəsiz yaşayış kompleksi ərazisi</span>
+                        </div>
+
+                        <div class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="clock" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                            <span>Bazar ertəsi - Şənbə: 08:00 - 19:00</span>
+                        </div>
+                    </div>
+
+                    <!-- Map / Direct Link Card -->
+                    <div class="lg:col-span-3">
+                        <div class="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/60">
+                            <h5 class="font-heading font-bold text-sm text-white mb-2">Ünvanımıza Xəritədə Baxın</h5>
+                            <p class="text-xs text-slate-400 mb-4">Google Maps vasitəsilə rahat marşrut təyin edin.</p>
+                            <a href="https://maps.google.com" target="_blank" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-semibold text-xs transition-colors">
+                                <i data-lucide="map" class="w-4 h-4"></i>
+                                <span>Google Maps-də Açın</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                    <p>© 2026 Baby Plaza Uşaq Bağçası. Bütün hüquqlar qorunur.</p>
+                    <p>Müasir Veb Dizayn & Proqram təminatı</p>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Horizontal Scroll for Schedule
+        function scrollSchedule(amount) {
+            const container = document.getElementById('schedule-container');
+            container.scrollBy({ left: amount, behavior: 'smooth' });
+        }
+
+        // Calculator Logic
+        function updateCalculator() {
+            // Selected Age Group
+            const ageGroup = document.querySelector('input[name="ageGroup"]:checked').value;
+            // Selected Duration
+            const duration = document.querySelector('input[name="duration"]:checked').value;
+            
+            // Checkboxes
+            const langChecked = document.getElementById('ext-lang').checked;
+            const danceChecked = document.getElementById('ext-dance').checked;
+            const speechChecked = document.getElementById('ext-speech').checked;
+
+            // Age Map
+            const ageMap = {
+                'baby': '4-12 Ay (Körpə Qrupu)',
+                'toddler': '1-3 Yaş (Erkən İnkişaf)',
+                'preschool': '3-6 Yaş (Məktəbəqədər)'
+            };
+
+            // Duration Map
+            const durationMap = {
+                'half': 'Yarımgünlük (08:00 - 13:00)',
+                'full': 'Tamgünlük (08:00 - 19:00)'
+            };
+
+            // Update Text in Summary Box
+            document.getElementById('summary-age').innerText = ageMap[ageGroup];
+            document.getElementById('summary-duration').innerText = durationMap[duration];
+
+            // Render Extra Services Tags
+            const extrasList = document.getElementById('summary-extras-list');
+            extrasList.innerHTML = '';
+
+            let selectedExtrasText = [];
+
+            if (langChecked) {
+                selectedExtrasText.push('İngilis və Rus dili');
+                extrasList.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-medium border border-emerald-500/20">🇬🇧 İngilis & Rus</span>`;
+            }
+            if (danceChecked) {
+                selectedExtrasText.push('Gimnastika və Rəqs');
+                extrasList.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-orange-500/10 text-orange-400 text-xs font-medium border border-orange-500/20">💃 Gimnastika & Rəqs</span>`;
+            }
+            if (speechChecked) {
+                selectedExtrasText.push('Logoped / Psixoloq');
+                extrasList.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-sky-500/10 text-sky-400 text-xs font-medium border border-sky-500/20">🧠 Logoped / Psixoloq</span>`;
+            }
+
+            if (!langChecked && !danceChecked && !speechChecked) {
+                extrasList.innerHTML = `<span class="text-xs text-slate-500 italic">Əlavə dərslər seçilməyib</span>`;
+            }
+
+            // Build WhatsApp Deep Link Message
+            let extrasString = selectedExtrasText.length > 0 ? selectedExtrasText.join(', ') : 'Xüsusi əlavə seçilməyib';
+            let waMessage = `Salam! Baby Plaza uşaq bağçasında paket hesablama nəticəm:%0A%0A` +
+                `👶 *Yaş Qrupu:* ${encodeURIComponent(ageMap[ageGroup])}%0A` +
+                `⏰ *İştirak Rejimi:* ${encodeURIComponent(durationMap[duration])}%0A` +
+                `✨ *Əlavə Xidmətlər:* ${encodeURIComponent(extrasString)}%0A%0A` +
+                `Bu paket üzrə ətraflı məlumat və tur vaxtı təyin etmək istəyirəm.`;
+
+            document.getElementById('whatsapp-btn').href = `https://wa.me/994505375434?text=${waMessage}`;
+        }
+
+        // Run calculator on page load to initialize WhatsApp link
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
